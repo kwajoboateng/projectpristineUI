@@ -6,7 +6,7 @@ export * from 'expo-router';
 declare module 'expo-router' {
   export namespace ExpoRouter {
     export interface __routes<T extends string = string> extends Record<string, unknown> {
-      StaticRoutes: `/` | `/(tabs)` | `/(tabs)/` | `/(tabs)/explore` | `/_sitemap` | `/explore`;
+      StaticRoutes: `/_sitemap` | `/screens/browseScreen` | `/screens/connectScreen` | `/screens/filterScreen` | `/screens/homeScreen`;
       DynamicRoutes: never;
       DynamicRouteTemplate: never;
     }
